@@ -1,0 +1,22 @@
+id: web-dashboard
+name: Web Dashboard
+description: Human-facing web dashboard for Agent Collaboration OS
+version: 1.0.0
+owner: Product Team
+artifacts:
+  - id: proposal
+    type: proposal
+    path: proposal.md
+    status: done
+  - id: design
+    type: design
+    path: design.md
+    status: done
+    requires:
+      - proposal
+  - id: tasks
+    type: tasks
+    path: tasks.md
+    status: done
+    requires:
+      - design
